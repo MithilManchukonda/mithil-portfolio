@@ -33,7 +33,7 @@ function Navbar() {
           }`}
         >
           <a href="#top" className="flex items-center gap-2 font-display font-semibold tracking-tight">
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-[var(--gradient-accent)] text-primary-foreground text-xs font-bold">
+            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg gradient-bg text-primary-foreground text-xs font-bold">
               MM
             </span>
             <span className="text-foreground">Mithil<span className="text-primary">.</span></span>
@@ -54,7 +54,7 @@ function Navbar() {
             <a
               href={profile.resumeUrl}
               download
-              className="inline-flex items-center gap-1.5 rounded-lg bg-[var(--gradient-accent)] px-3.5 py-2 text-sm font-medium text-primary-foreground hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-1.5 rounded-lg gradient-bg px-3.5 py-2 text-sm font-medium text-primary-foreground hover:opacity-90 transition-opacity"
             >
               Resume <Download className="h-3.5 w-3.5" />
             </a>
@@ -85,7 +85,7 @@ function Navbar() {
                 <a
                   href={profile.resumeUrl}
                   download
-                  className="mt-1 block text-center rounded-lg bg-[var(--gradient-accent)] px-3 py-2.5 text-sm font-medium text-primary-foreground"
+                  className="mt-1 block text-center rounded-lg gradient-bg px-3 py-2.5 text-sm font-medium text-primary-foreground"
                 >
                   Download Resume
                 </a>
@@ -122,7 +122,7 @@ function Hero() {
         <div className="mt-9 flex flex-wrap items-center gap-3 animate-[fade-up_0.7s_ease-out_0.28s_both]">
           <a
             href="#projects"
-            className="group inline-flex items-center gap-2 rounded-xl bg-[var(--gradient-accent)] px-5 py-3 text-sm font-semibold text-primary-foreground shadow-[0_10px_30px_-10px_oklch(0.78_0.16_165/0.5)] hover:shadow-[0_15px_40px_-10px_oklch(0.78_0.16_165/0.7)] transition-all"
+            className="group inline-flex items-center gap-2 rounded-xl gradient-bg px-5 py-3 text-sm font-semibold text-primary-foreground shadow-[0_10px_30px_-10px_oklch(0.78_0.16_165/0.5)] hover:shadow-[0_15px_40px_-10px_oklch(0.78_0.16_165/0.7)] transition-all"
           >
             View my work
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
@@ -379,7 +379,7 @@ function Contact() {
     <section ref={ref} id="contact" className="py-24 sm:py-32">
       <div className="mx-auto max-w-4xl px-5">
         <div className="reveal glass-strong rounded-3xl p-8 sm:p-14 text-center relative overflow-hidden">
-          <div className="absolute -top-20 left-1/2 -translate-x-1/2 h-40 w-[80%] rounded-full bg-[var(--gradient-accent)] opacity-20 blur-3xl pointer-events-none" />
+          <div className="absolute -top-20 left-1/2 -translate-x-1/2 h-40 w-[80%] rounded-full gradient-bg opacity-20 blur-3xl pointer-events-none" />
           <div className="relative">
             <div className="font-mono text-xs uppercase tracking-[0.2em] text-primary">05 / Contact</div>
             <h2 className="mt-3 font-display text-3xl sm:text-5xl font-semibold tracking-tight">
@@ -391,7 +391,7 @@ function Contact() {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <a
                 href={`mailto:${profile.email}`}
-                className="inline-flex items-center gap-2 rounded-xl bg-[var(--gradient-accent)] px-5 py-3 text-sm font-semibold text-primary-foreground"
+                className="inline-flex items-center gap-2 rounded-xl gradient-bg px-5 py-3 text-sm font-semibold text-primary-foreground"
               >
                 <Mail className="h-4 w-4" />
                 {profile.email}
