@@ -136,6 +136,10 @@
   border: 1px solid var(--border-strong);
 }
 
+@utility gradient-bg {
+  background: var(--gradient-accent);
+}
+
 @utility text-gradient {
   background: var(--gradient-text);
   -webkit-background-clip: text;
