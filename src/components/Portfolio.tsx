@@ -43,7 +43,7 @@ function Navbar() {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="px-3 py-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-white/5 transition-colors"
+                  className="px-3 py-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-foreground/5 transition-colors"
                 >
                   {l.label}
                 </a>
@@ -61,7 +61,7 @@ function Navbar() {
           </div>
           <button
             aria-label="Toggle menu"
-            className="md:hidden p-2 rounded-lg hover:bg-white/5"
+            className="md:hidden p-2 rounded-lg hover:bg-foreground/5"
             onClick={() => setOpen((v) => !v)}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -75,7 +75,7 @@ function Navbar() {
                   <a
                     onClick={() => setOpen(false)}
                     href={l.href}
-                    className="block px-3 py-2.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-white/5"
+                    className="block px-3 py-2.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-foreground/5"
                   >
                     {l.label}
                   </a>
@@ -134,13 +134,13 @@ function Hero() {
             Get in touch
           </a>
           <div className="flex items-center gap-1 ml-1">
-            <a aria-label="GitHub" href={profile.github} target="_blank" rel="noreferrer" className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-white/5 transition-colors">
+            <a aria-label="GitHub" href={profile.github} target="_blank" rel="noreferrer" className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-foreground/5 transition-colors">
               <Github className="h-5 w-5" />
             </a>
-            <a aria-label="LinkedIn" href={profile.linkedin} target="_blank" rel="noreferrer" className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-white/5 transition-colors">
+            <a aria-label="LinkedIn" href={profile.linkedin} target="_blank" rel="noreferrer" className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-foreground/5 transition-colors">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a aria-label="Email" href={`mailto:${profile.email}`} className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-white/5 transition-colors">
+            <a aria-label="Email" href={`mailto:${profile.email}`} className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-foreground/5 transition-colors">
               <Mail className="h-5 w-5" />
             </a>
           </div>
@@ -183,7 +183,7 @@ function About() {
           <div className="lg:col-span-2 reveal">
             <div className="glass rounded-2xl p-2 grid grid-cols-2 gap-2">
               {about.highlights.map((h) => (
-                <div key={h.label} className="rounded-xl bg-white/[0.02] p-5 border border-border">
+                <div key={h.label} className="rounded-xl bg-foreground/[0.025] p-5 border border-border">
                   <div className="text-xs font-mono uppercase tracking-wider text-muted-foreground">{h.label}</div>
                   <div className="mt-2 font-display text-lg font-semibold text-foreground">{h.value}</div>
                 </div>
@@ -224,7 +224,7 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="GitHub repository"
-                      className="p-2 rounded-lg hover:bg-white/5 text-muted-foreground hover:text-foreground"
+                      className="p-2 rounded-lg hover:bg-foreground/5 text-muted-foreground hover:text-foreground"
                     >
                       <Github className="h-4 w-4" />
                     </a>
@@ -235,7 +235,7 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Live demo"
-                      className="p-2 rounded-lg hover:bg-white/5 text-muted-foreground hover:text-foreground"
+                      className="p-2 rounded-lg hover:bg-foreground/5 text-muted-foreground hover:text-foreground"
                     >
                       <ArrowUpRight className="h-4 w-4" />
                     </a>
@@ -270,7 +270,7 @@ function Projects() {
                 {p.stack.map((s) => (
                   <span
                     key={s}
-                    className="rounded-md bg-white/[0.04] border border-border px-2 py-1 text-[11px] font-mono text-muted-foreground"
+                    className="rounded-md bg-foreground/[0.025] border border-border px-2 py-1 text-[11px] font-mono text-muted-foreground"
                   >
                     {s}
                   </span>
@@ -308,7 +308,7 @@ function Skills() {
                 {g.items.map((s) => (
                   <span
                     key={s}
-                    className="rounded-md bg-white/[0.03] border border-border px-2.5 py-1 text-xs font-mono text-muted-foreground"
+                    className="rounded-md bg-foreground/[0.025] border border-border px-2.5 py-1 text-xs font-mono text-muted-foreground"
                   >
                     {s}
                   </span>
@@ -355,7 +355,7 @@ function Education() {
                     href={c.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="group flex items-start justify-between gap-3 rounded-lg p-2 -mx-2 hover:bg-white/[0.03]"
+                    className="group flex items-start justify-between gap-3 rounded-lg p-2 -mx-2 hover:bg-foreground/[0.025]"
                   >
                     <div>
                       <div className="text-sm text-foreground">{c.name}</div>
@@ -406,10 +406,10 @@ function Contact() {
               </a>
             </div>
             <div className="mt-6 flex items-center justify-center gap-2">
-              <a href={profile.github} target="_blank" rel="noreferrer" className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-white/5">
+              <a href={profile.github} target="_blank" rel="noreferrer" className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-foreground/5">
                 <Github className="h-5 w-5" />
               </a>
-              <a href={profile.linkedin} target="_blank" rel="noreferrer" className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-white/5">
+              <a href={profile.linkedin} target="_blank" rel="noreferrer" className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-foreground/5">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
