@@ -1,31 +1,70 @@
 export const profile = {
   name: "Mithil Manchukonda",
-  role: "Software Developer",
+  role: "Full-Stack Developer · AI-Curious",
   location: "Hyderabad, India",
   email: "mithilmanchukonda@gmail.com",
   phone: "+91 8466903113",
   github: "https://github.com/MithilManchukonda",
   linkedin: "https://www.linkedin.com/in/mithil-manchukonda/", // PLACEHOLDER — replace with real URL
   resumeUrl: "/Manchukonda_Mithil_Resume.pdf",
-  headline: "B.Tech CS student building practical software with Python, APIs, and the web.",
+  headline: "B.Tech CS student shipping full-stack products with React, Node, and AI.",
   tagline:
-    "Third-year Computer Science student from Hyderabad. I design small, reliable tools — automation scripts, REST integrations, and clean web interfaces — and I'm looking for an internship where I can ship real work and learn fast.",
+    "Third-year Computer Science student from Hyderabad. I build production-ready web apps — full-stack tools with authentication, databases, and AI features — and I'm looking for an internship where I can ship real work and learn fast.",
 };
 
 export const about = {
   paragraphs: [
-    "I'm a third-year B.Tech Computer Science student at Vignan Institute of Technology and Science. My focus is software development — writing readable code, debugging carefully, and turning small ideas into working products.",
-    "Most of what I build today is in Python: automation utilities, REST API clients, and file/data tools. I'm actively expanding into full-stack web development, databases, and cloud/AI fundamentals, and I document everything on GitHub so my progress is easy to verify.",
+    "I'm a third-year B.Tech Computer Science student at Vignan Institute of Technology and Science. My focus is full-stack development — designing clean UIs in React, wiring them to real backends, and integrating AI where it actually helps the user.",
+    "I've shipped live products this year: a developer cheat-sheet app with Firebase auth and Firestore, and an AI-powered resume builder on the MERN stack with Gemini and Google OAuth. I'm actively expanding into cloud fundamentals and system design, and I document every project on GitHub so my progress is easy to verify.",
   ],
   highlights: [
     { label: "CGPA", value: "8.3 / 10" },
-    { label: "Focus", value: "Python · APIs · Web" },
+    { label: "Stack", value: "React · Node · Firebase" },
     { label: "Year", value: "3rd Year B.Tech" },
     { label: "Open to", value: "Internships · SDE roles" },
   ],
 };
 
 export const projects = [
+  {
+    name: "DevRef — Developer Cheat Sheet App",
+    summary: "A live, searchable cheat-sheet app for 8 languages with auth, Firestore sync, and user-contributed snippets.",
+    problem:
+      "As a CS student learning multiple languages at once, I kept re-Googling the same syntax. I wanted one fast, personal reference I could search — and extend with my own notes.",
+    stack: ["React 18", "Vite", "Tailwind CSS", "Framer Motion", "Firebase Auth", "Firestore"],
+    features: [
+      "24+ curated snippets across Python, JS, React, Java, HTML, CSS, DevOps, and AWS",
+      "Live search + language filter pills that narrow the grid as you type",
+      "Google and email/password auth via Firebase, with per-user bookmarks",
+      "Logged-in users can add their own snippets — synced in real time via Firestore onSnapshot",
+      "Click-to-expand output reveal and one-click copy with toast confirmation",
+    ],
+    outcome:
+      "Shipped end-to-end: designed the data model, handled auth flows, tuned Firestore rules, and deployed on Vercel with a custom dark neon UI.",
+    github: "https://github.com/MithilManchukonda/Devref1",
+    demo: "https://devref1.vercel.app/",
+    tag: "Full-Stack",
+  },
+  {
+    name: "AI Resume Builder",
+    summary: "MERN-stack resume builder with Gemini-powered review, ATS scoring, and version history.",
+    problem:
+      "Most resume tools are static templates. I wanted one that actively coaches the user — rewrites weak bullets, scores against a job description, and keeps every draft.",
+    stack: ["React 19", "Vite", "Node.js", "Express", "MongoDB", "JWT", "Google OAuth", "Gemini AI", "LangChain"],
+    features: [
+      "Full resume editor with live preview and multiple templates",
+      "AI review, summary generation, and bullet rewriting via Gemini + LangChain",
+      "ATS analysis: keyword coverage and match score against a pasted job description",
+      "Email/password + Google OAuth auth with JWT sessions",
+      "Version history — save, browse, and restore prior drafts from MongoDB",
+      "Structured backend with controllers, services, and Mongoose models",
+    ],
+    outcome:
+      "First end-to-end MERN project — designed the schema, built REST endpoints, wired AI safely on the server, and kept secrets out of the client.",
+    github: "https://github.com/MithilManchukonda/resume_builder",
+    demo: null, // PLACEHOLDER — add live demo URL after deploying
+    tag: "Full-Stack · AI",
+  },
   {
     name: "News API Email Notifier",
     summary: "Automated digest service that delivers personalized news straight to your inbox.",
@@ -57,7 +96,7 @@ export const projects = [
       "Tested against a range of edge cases",
     ],
     outcome:
-      "Got comfortable with iterative debugging across file I/O and third-party libraries — and with writing code that another person can pick up quickly.",
+      "Got comfortable with iterative debugging across file I/O and third-party libraries — and with writing code another person can pick up quickly.",
     github: "https://github.com/MithilManchukonda/pdf-generation",
     demo: null,
     tag: "Tooling",
@@ -80,33 +119,15 @@ export const projects = [
     demo: null,
     tag: "Learning",
   },
-  {
-    name: "Personal Portfolio Site",
-    summary: "This site — a dark, glass-accented portfolio built for clarity and speed.",
-    problem:
-      "Resumes are static. I wanted a living portfolio that recruiters can scan in under a minute.",
-    stack: ["React", "TanStack Start", "TypeScript", "Tailwind CSS"],
-    features: [
-      "Sticky navigation with smooth in-page anchors",
-      "Glassmorphism surfaces and emerald/cyan accent system",
-      "Section reveal animations with no layout shift",
-      "Fully responsive from 360px upwards",
-    ],
-    outcome:
-      "Practiced design-system thinking — semantic tokens, reusable variants, and accessible motion.",
-    github: "https://github.com/MithilManchukonda", // PLACEHOLDER — add repo link
-    demo: null,
-    tag: "Web",
-  },
 ];
 
 export const skillGroups = [
-  { title: "Languages", items: ["Python", "SQL", "JavaScript (learning)", "TypeScript (learning)"] },
-  { title: "Web & Frameworks", items: ["HTML", "CSS", "React (learning)", "REST APIs"] },
-  { title: "Databases", items: ["MySQL", "Oracle", "Schema design", "Joins & aggregations"] },
-  { title: "Tools & Platforms", items: ["Git", "GitHub", "VS Code", "Command line", "Linux basics"] },
-  { title: "Concepts", items: ["Data Structures", "Algorithms", "OOP", "SDLC", "Debugging"] },
-  { title: "Currently learning", items: ["Cloud fundamentals (AWS)", "Applied AI / LLM APIs", "System design basics"] },
+  { title: "Languages", items: ["JavaScript", "TypeScript", "Python", "SQL", "HTML", "CSS"] },
+  { title: "Frontend", items: ["React 18/19", "Vite", "Tailwind CSS", "Framer Motion", "Responsive UI"] },
+  { title: "Backend & APIs", items: ["Node.js", "Express", "REST APIs", "JWT auth", "Google OAuth"] },
+  { title: "Databases", items: ["MongoDB / Mongoose", "Firebase Firestore", "MySQL", "Oracle", "Schema design"] },
+  { title: "AI & Cloud", items: ["Gemini API", "LangChain", "Firebase Auth & Hosting", "Vercel", "AWS (learning)"] },
+  { title: "Tools & Concepts", items: ["Git & GitHub", "VS Code", "Linux basics", "Data Structures", "OOP", "Debugging"] },
 ];
 
 export const education = [
