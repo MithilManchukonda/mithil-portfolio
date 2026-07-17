@@ -1,27 +1,27 @@
 export const profile = {
   name: "Mithil Manchukonda",
-  role: "Full-Stack Developer · AI-Curious",
+  role: "Full-Stack Developer · React & Node",
   location: "Hyderabad, India",
   email: "mithilmanchukonda@gmail.com",
   phone: "+91 8466903113",
   github: "https://github.com/MithilManchukonda",
-  linkedin: "https://www.linkedin.com/in/mithil-manchukonda/", // PLACEHOLDER — replace with real URL
+  linkedin: "https://www.linkedin.com/in/manchukonda-mithil-a1595b362/",
   resumeUrl: "/Manchukonda_Mithil_Resume.pdf",
-  headline: "B.Tech CS student shipping full-stack products with React, Node, and AI.",
+  headline: "Final-year CS student shipping full-stack React apps to production.",
   tagline:
-    "Third-year Computer Science student from Hyderabad. I build production-ready web apps — full-stack tools with authentication, databases, and AI features — and I'm looking for an internship where I can ship real work and learn fast.",
+    "Final-year Computer Science student (CGPA 8.3) from Hyderabad. I build and deploy full-stack React applications end-to-end — component architecture, REST APIs, auth, and databases — and I'm looking for a Full Stack Development Internship where I can ship real work and grow into Spring Boot-based backend systems.",
 };
 
 export const about = {
   paragraphs: [
-    "I'm a third-year B.Tech Computer Science student at Vignan Institute of Technology and Science. My focus is full-stack development — designing clean UIs in React, wiring them to real backends, and integrating AI where it actually helps the user.",
-    "I've shipped live products this year: a developer cheat-sheet app with Firebase auth and Firestore, and an AI-powered resume builder on the MERN stack with Gemini and Google OAuth. I'm actively expanding into cloud fundamentals and system design, and I document every project on GitHub so my progress is easy to verify.",
+    "I'm a final-year B.Tech Computer Science student at Vignan Institute of Technology and Science. My focus is full-stack development — comfortable across the modern JavaScript/React ecosystem (hooks, context, component-based architecture, REST integration) with a working foundation in Node/Express and Python backends.",
+    "I've independently shipped and debugged production-deployed projects this year: a developer cheat-sheet app with Firebase Auth and Firestore, and an AI-powered resume builder on the MERN stack with Gemini and Google OAuth. Next up: growing into Spring Boot backend systems and deepening my cloud fundamentals.",
   ],
   highlights: [
     { label: "CGPA", value: "8.3 / 10" },
-    { label: "Stack", value: "React · Node · Firebase" },
-    { label: "Year", value: "3rd Year B.Tech" },
-    { label: "Open to", value: "Internships · SDE roles" },
+    { label: "Stack", value: "React · Node · MongoDB" },
+    { label: "Year", value: "Final Year B.Tech" },
+    { label: "Open to", value: "Full-Stack Internships" },
   ],
 };
 
@@ -122,12 +122,12 @@ export const projects = [
 ];
 
 export const skillGroups = [
-  { title: "Languages", items: ["JavaScript", "TypeScript", "Python", "SQL", "HTML", "CSS"] },
-  { title: "Frontend", items: ["React 18/19", "Vite", "Tailwind CSS", "Framer Motion", "Responsive UI"] },
-  { title: "Backend & APIs", items: ["Node.js", "Express", "REST APIs", "JWT auth", "Google OAuth"] },
-  { title: "Databases", items: ["MongoDB / Mongoose", "Firebase Firestore", "MySQL", "Oracle", "Schema design"] },
-  { title: "AI & Cloud", items: ["Gemini API", "LangChain", "Firebase Auth & Hosting", "Vercel", "AWS (learning)"] },
-  { title: "Tools & Concepts", items: ["Git & GitHub", "VS Code", "Linux basics", "Data Structures", "OOP", "Debugging"] },
+  { title: "Frontend", items: ["JavaScript (ES6+)", "React.js", "Hooks & Context", "HTML5", "CSS3", "Tailwind CSS", "Responsive Design"] },
+  { title: "Backend & APIs", items: ["Node.js", "Express.js", "REST APIs", "Python", "FastAPI", "Serverless (Vercel)"] },
+  { title: "Databases & Cloud", items: ["MySQL", "MongoDB", "Firebase Auth & Firestore", "Oracle", "Vercel"] },
+  { title: "AI Integration", items: ["Gemini AI", "LangChain", "JWT & Google OAuth", "ATS / job-matching"] },
+  { title: "Tools & Practices", items: ["Git & GitHub", "VS Code", "Vercel deployment", "OOP", "SDLC", "Debugging"] },
+  { title: "CS Fundamentals", items: ["Data Structures", "Algorithms", "System design (learning)", "Spring Boot (next)"] },
 ];
 
 export const education = [
@@ -152,6 +152,7 @@ export const education = [
 ];
 
 export const certifications = [
+  { name: "Dynamic Web Application Development", issuer: "NxtWave CCBP Academy", url: "https://certificates.ccbp.in/academy/dynamic-web-application?id=NZMZSTPUXT" },
   { name: "Static Website Development", issuer: "NxtWave CCBP Academy", url: "https://certificates.ccbp.in/academy/static-website?id=NKZBSOTKVQ" },
   { name: "Introduction to Databases", issuer: "NxtWave CCBP Academy", url: "https://certificates.ccbp.in/academy/introduction-to-databases?id=WUKLRSGAXU" },
   { name: "Programming Foundations with Python", issuer: "NxtWave CCBP Academy", url: "https://certificates.ccbp.in/academy/programming-foundations-with-python?id=PQSLIMEMJD" },
