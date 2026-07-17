@@ -153,6 +153,7 @@ export const education = [
 
 export const certifications = [
   { name: "Dynamic Web Application Development", issuer: "NxtWave CCBP Academy", url: "https://certificates.ccbp.in/academy/dynamic-web-application?id=NZMZSTPUXT" },
+  { name: "Build Your Own Responsive Website", issuer: "NxtWave CCBP Academy", url: "https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=NCVZYZEUZS" },
   { name: "Static Website Development", issuer: "NxtWave CCBP Academy", url: "https://certificates.ccbp.in/academy/static-website?id=NKZBSOTKVQ" },
   { name: "Introduction to Databases", issuer: "NxtWave CCBP Academy", url: "https://certificates.ccbp.in/academy/introduction-to-databases?id=WUKLRSGAXU" },
   { name: "Programming Foundations with Python", issuer: "NxtWave CCBP Academy", url: "https://certificates.ccbp.in/academy/programming-foundations-with-python?id=PQSLIMEMJD" },
